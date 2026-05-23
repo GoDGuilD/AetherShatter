@@ -1,0 +1,48 @@
+# ── .NET / C# ────────────────────────────────────────────────────────────────
+bin/
+obj/
+*.user
+*.suo
+.vs/
+*.userprefs
+*.usertasks
+
+# NuGet restore artefacts
+*.lock.json
+packages/
+.nuget/
+
+# Build outputs
+*.exe
+*.dll
+*.pdb
+*.xml
+*.nupkg
+
+# ── MonoGame Content Pipeline ────────────────────────────────────────────────
+# Intermediate build artefacts are ignored; the final .xnb files committed to
+# Content/ are the pre-built output shipped with the source so "dotnet run"
+# works without requiring the mgcb tool to be installed.
+Content/obj/
+Content/bin/
+!Content/*.xnb
+
+# ── OS & editor noise ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+
+# ── Rider / JetBrains ────────────────────────────────────────────────────────
+.idea/
+*.sln.DotSettings.user
+
+# ── VSCode ────────────────────────────────────────────────────────────────────
+.vscode/
+!.vscode/extensions.json
+
+# ── Secrets / env ────────────────────────────────────────────────────────────
+.env
+*.env.local
+secrets.json

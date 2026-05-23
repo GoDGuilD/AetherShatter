@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dotnet --version)",
+      "Bash(dotnet new *)",
+      "Bash(findstr -i \"mono\")",
+      "PowerShell(Get-Command *)",
+      "PowerShell(& \"C:\\\\Program Files\\\\dotnet\\\\dotnet.exe\" --version)",
+      "PowerShell(New-Item *)",
+      "Bash(git init *)",
+      "Bash(git config *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(grep -c \"//\" AetherShatterGame.cs Core/*.cs Entities/*.cs States/*.cs Levels/*.cs)",
+      "Bash(grep -c \"///\" AetherShatterGame.cs Core/*.cs Entities/*.cs States/*.cs Levels/*.cs)",
+      "PowerShell(dotnet mgcb *)",
+      "PowerShell(Copy-Item *)"
+    ]
+  }
+}

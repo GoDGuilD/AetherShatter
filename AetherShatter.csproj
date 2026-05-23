@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>AetherShatter</RootNamespace>
+    <AssemblyName>AetherShatter</AssemblyName>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Platforms>x64</Platforms>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Runtime framework only. MonoGame.Content.Builder.Task is intentionally omitted
+         because the mgcb global tool does not resolve via "dotnet mgcb" on all setups.
+         Content is pre-built and committed directly; see Content/Font.xnb. -->
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.4.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Copy the pre-compiled SpriteFont XNB into Content/ of the output directory
+         so Content.Load<SpriteFont>("Font") resolves at runtime. -->
+    <Content Include="Content\Font.xnb" Link="Content\Font.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>

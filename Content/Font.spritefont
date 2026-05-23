@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  This file describes a SpriteFont to be compiled by the MonoGame Content Builder.
+  It uses Arial (or a system fallback).  Change the FontName to any installed font.
+-->
+<XnaContent xmlns:Graphics="Microsoft.Xna.Framework.Content.Pipeline.Graphics">
+  <Asset Type="Graphics:FontDescription">
+
+    <FontName>Arial</FontName>
+
+    <!-- Size in points -->
+    <Size>14</Size>
+
+    <!-- Spacing (in pixels) between characters -->
+    <Spacing>1</Spacing>
+
+    <!-- Whether to use kerning information in the font data -->
+    <UseKerning>true</UseKerning>
+
+    <!-- Font style: Regular, Bold, Italic, or Bold|Italic -->
+    <Style>Regular</Style>
+
+    <!-- Colour of characters in the output texture.
+         Does not affect runtime colour; use SpriteBatch tinting for that. -->
+    <CharacterRegions>
+      <CharacterRegion>
+        <Start>&#32;</Start>
+        <End>&#126;</End>
+      </CharacterRegion>
+    </CharacterRegions>
+
+  </Asset>
+</XnaContent>
